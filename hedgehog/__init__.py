@@ -1,5 +1,9 @@
 from flask import Flask
 
-app = Flask(__name__)
+from hedgehog.simple_page import simple_page
 
-import hedgehog.views			# isort:skip
+app = Flask(__name__)
+app.register_blueprint(simple_page)
+
+from hedgehog.views import *    # isort:skip
+
