@@ -1,4 +1,5 @@
 
+#### root_directory = where this file lives.
 
 ## Installation
 
@@ -19,7 +20,7 @@ to `-e .`
 
 ## Running
 
-`export FLASK_APP=hedgehog` (at the app root directory)
+`export FLASK_APP=hedgehog` **from root_directory**
 
 `flask run`
 
@@ -28,10 +29,14 @@ to `-e .`
 
 ## Migration
 
-`flask db init` from the root directory
+`flask db init` **from root_directory**
 
 `flask db migrate`
 
 the migration folder should exist OUTSIDE of hedgehog/hedgehog
 
+
+## Testing
+
+`python -m unittest discover testing`  **from root_directory**
 

@@ -1,8 +1,17 @@
+
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-
 from hedgehog.simple_page import simple_page
+
+"""
+The following variable exist here:
+- app
+- db
+
+This allows us to do `from hedgehog import app, db`, as long
+as we install this package properly via `pip install -e`
+"""
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
