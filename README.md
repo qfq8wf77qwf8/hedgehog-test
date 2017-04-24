@@ -20,10 +20,18 @@ to `-e .`
 ## Running
 
 `export FLASK_APP=hedgehog` (at the app root directory)
+
 `flask run`
 
 `heroku local`
 
 
+## Migration
+
+`flask db init` from the root directory
+
+`flask db migrate`
+
+the migration folder should exist OUTSIDE of hedgehog/hedgehog
 
 
