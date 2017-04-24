@@ -5,7 +5,7 @@ Flask-Migrate==2.0.3
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.2
 gunicorn==19.7.1
--e git+git@github.com:qfq8wf77qwf8/test.git@6f5a3a3553a754e91a43ef372242964a812758f3#egg=hedgehog
+-e .
 itsdangerous==0.24
 Jinja2==2.9.6
 Mako==1.0.6
