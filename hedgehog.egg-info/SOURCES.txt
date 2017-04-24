@@ -1,6 +1,0 @@
-hedgehog/__init__.py
-hedgehog.egg-info/PKG-INFO
-hedgehog.egg-info/SOURCES.txt
-hedgehog.egg-info/dependency_links.txt
-hedgehog.egg-info/requires.txt
-hedgehog.egg-info/top_level.txt
