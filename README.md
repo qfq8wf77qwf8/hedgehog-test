@@ -1,6 +1,29 @@
 
-# To install this package locally:
+
+## Installation
+
+To install this app as a package in your python env:
 
 `pip install -e .`
 
-# Then `pip freeze` it so that heroku will know how to run
+
+## Do not use pip freeze directly
+
+Pip freeze is causing an issue for this package that
+is installed locally through `pip install -e`
+
+Hence everytime you do `pip freeze > requirements.txt`,
+edit the file manually and change the line that starts with `-e`
+to `-e .`
+
+
+## Running
+
+`export FLASK_APP=hedgehog` (at the app root directory)
+`flask run`
+
+`heroku local`
+
+
+
+
