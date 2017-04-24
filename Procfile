@@ -1,1 +1,1 @@
-gunicorn hedgehog:app
+web: gunicorn hedgehog:app
