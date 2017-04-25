@@ -1,6 +1,7 @@
 import unittest
 
 from hedgehog import app, db
+from hedgehog.config import TestingConfig
 
 
 class SimplePageTestCase(unittest.TestCase):
@@ -8,6 +9,7 @@ class SimplePageTestCase(unittest.TestCase):
   def setUp(self):
     self.app = app
     self.app.config['TESTING'] = True
+    self.app.config.from_object(TestingConfig)
     self.app_context = self.app.app_context()
     self.client = app.test_client()
 
